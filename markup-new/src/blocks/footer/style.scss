@@ -1,0 +1,124 @@
+@import "../banner-about/style";
+@import "../banner-news/style";
+
+footer {
+  background: url("../images/footer.png");
+  padding-top: 46px;
+  padding-bottom: 12px;
+  h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+    a {
+      font-size: 14px;
+      line-height: 30px;
+      color: #DEDEDE;
+      &:hover {
+        color: $red-hover;
+      }
+    }
+  }
+  .footer-menu {
+    padding-left: 71px;
+
+    @media (max-width: 1199.98px) {
+      padding-left: 40px;
+    }
+
+
+    @media (max-width: 575.98px) {
+      padding-left: 0;
+    }
+
+    a {
+      font-weight: bold;
+      line-height: 40px;
+      color: #F0EEEE
+    }
+  }
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: 575.98px) {
+      align-items: start;
+    }
+
+    a:hover {
+      color: $red-hover;
+    }
+    .phone-number {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #DEDEDE;
+      margin-bottom: 11px;
+    }
+    .email {
+      margin-top: 22px;
+      margin-bottom: 6px;
+      font-size: 16px;
+      line-height: 18px;
+      color: $red_color;
+    }
+    .addres {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #F0EEEE;
+      margin-bottom: 34px;
+      text-align: right;
+    }
+    .subscription {
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #E03232;
+      margin-bottom: 11px;
+    }
+  }
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 270px;
+  }
+  .form-control {
+    position: relative;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    background: white;
+    border-radius: 3px 0 0 3px;
+    padding: 12px 0 10px 25px;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .input-group > .input-group-append > .btn {
+    height: 40px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    border: none;
+    background: white;
+  }
+  .footer-company {
+    margin-top: 60px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #767676;
+  }
+}

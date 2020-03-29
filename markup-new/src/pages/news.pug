@@ -1,0 +1,12 @@
+extends ../template/layout
+include ../blocks/news/mixin
+
+block variables
+    -
+        var title = 'Новости'
+
+block styles
+    link(rel='stylesheet' href='css/pages/news.css')
+
+block content
+    +news

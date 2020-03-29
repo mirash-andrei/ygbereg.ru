@@ -1,0 +1,84 @@
+include ../banner-about/mixin
+include ../banner-news/mixin
+mixin footer()
+    +banner-about
+    if home
+        +banner-news
+    footer
+        .container
+            .row
+                .col-lg-2.col-sm-4
+                    h3  Каталог
+                    ul
+                        li
+                            a(href="#") Огнетушители
+                        li
+                            a(href="#") Шкафы пожарные
+                        li
+                            a(href="#") Головки, стволы
+                        li
+                            a(href="#") Рукава пожарные
+                        li
+                            a(href="#") Гидранты пожарные и подставки
+                        li
+                            a(href="#") Щиты, ящики, инвентарь
+                        li
+                            a(href="#") Краны, вентили
+                .col-lg-2.col-sm-4
+                    ul
+                        li
+                            a(href="#") Водопенное борудование
+                        li
+                            a(href="#") Знаки, плакаты, планы эвакуации
+                        li
+                            a(href="#") Противопожарные двери
+                        li
+                            a(href="#") Огнезащитные составы
+                        li
+                            a(href="#") Одежда пожарных (БОП, СИЗ)
+                        li
+                            a(href="#") Прочее оборудование
+                .col-lg-2.col-sm-4
+                    ul.footer-menu
+                        li
+                            a(href="#") Услуги
+                        li
+                            a(href="#") Акции
+                        li
+                            a(href="#") О компании
+                        li
+                            a(href="#") Прайс
+                        li
+                            a(href="#") Доставка
+                        li
+                            a(href="#") Контакты
+                .col-lg-2.col-sm-6
+                    ul
+                        li
+                            a(href="#") Формы договоров
+                        li
+                            a(href="#") Отзывы
+                        li
+                            a(href="#") Вакансии
+                        li
+                            a(href="#") Вопросы
+                        li
+                            a(href="#") Оформление заказа
+                        li
+                            a(href="#") Информация по ПБ
+                        li
+                            a(href="#") Новости
+                .col-lg-4.col-sm-6.feedback
+                    a(class="phone-number" href="tel:8(861)257-07-62") 8(861)257-07-62
+                    a(class="phone-number" href="tel:8(861)257-07-62") 8(861)257-07-62
+                    a(class="email" href="mailto:yuzhni_bereg@mail.ru") yuzhni_bereg@mail.ru
+                    p.addres Краснодар, ул Московская 116/1
+                    p.subscription Подписаться на Акции
+                    .input-group
+                        input.form-control(type='text' placeholder="Email...")
+                        .input-group-append
+                            button.btn.btn-outline-secondary(type='button')
+                                svg(width='20' height='14')
+                                    use(xlink:href='#enter')
+
+            p.footer-company ООО "Южный берег" - Пожарное, противопожарное и аварийно-спасательное оборудование

@@ -1,0 +1,32 @@
+div.nav {
+  background: $black;
+  //font-family: $Proxima;
+
+  .navbar{
+    padding: 5px 0;
+
+    .nav-item{
+      color: $gray;
+      font-size: 14px;
+      &:hover{
+        color: $red_color;
+        text-decoration: underline;
+      }
+    }
+    .nav-user{
+      color: $gray;
+      font-size: 14px;
+      display: flex;
+      &:hover{
+        color: $red_color;
+        border-color: $red_color;
+      }
+      svg{
+        margin-right: 10px;
+      }
+      span{
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+}

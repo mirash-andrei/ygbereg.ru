@@ -1,0 +1,44 @@
+.workarea {
+  &-breadcrumb {
+    position: relative;
+    display: block;
+    margin: 30px 0 17px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin: 0 20px 0 0;
+
+        &:after {
+          content: "/";
+          position: absolute;
+          top: 0;
+          right: -11.945px;
+          color: #9F9F9F;
+          font-size: 13px;
+        }
+      }
+
+    }
+
+    &-link {
+      color: #9F9F9F;
+      font-size: 13px;
+
+      &:hover:not(span),
+      &:focus:not(span) {
+        color: $red_color;
+        text-decoration: none;
+      }
+    }
+  }
+}

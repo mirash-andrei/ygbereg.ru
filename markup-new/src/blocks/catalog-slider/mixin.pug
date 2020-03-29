@@ -1,0 +1,61 @@
+include ../catalog-element/mixin
+
+mixin catalog-slider
+   section.catalog-slider
+        .container
+            .js-tab
+                .js-tabList.d-flex
+                    .js-tabItem.is-select Хиты продаж
+                    .js-tabItem Спец. предложения
+                .catalog-tabWrap
+                    .js-tabBlock.is-open
+                        .swiper-container.swiper-catalog
+                            .swiper-wrapper
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                            .swiper-button-next
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')
+                            .swiper-button-prev
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')
+
+                    .js-tabBlock
+                        .swiper-container.swiper-catalog-2
+                            .swiper-wrapper
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                                .swiper-slide
+                                    +catalog-element
+                            .swiper-button-next
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')
+                            .swiper-button-prev
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')

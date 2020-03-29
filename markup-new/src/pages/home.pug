@@ -1,0 +1,19 @@
+extends ../template/layout
+include ../blocks/banners/mixin
+include ../blocks/catalog-slider/mixin
+include ../blocks/about/mixin
+
+block variables
+    -
+        var title = 'Главная'
+        var home = true
+
+block styles
+    link(rel='stylesheet' href='css/pages/home.css')
+
+block content
+    +banners
+    +catalog-slider
+    +about
+
+

@@ -1,0 +1,28 @@
+include ../breadcrumb/mixin
+include ../news-element/mixin
+include ../news-element-img/mixin
+include ../pagination/mixin
+
+mixin news()
+    section.news
+        .container
+            +breadcrumb
+            h1 Новости
+            .row
+                +news-element
+                +news-element-img
+                +news-element
+                +news-element
+                +news-element
+                +news-element
+                +news-element-img
+                +news-element
+                +news-element
+                +news-element-img
+                +news-element
+                +news-element
+
+                .col-12.d-flex.justify-content-end
+                    +pagination
+
+

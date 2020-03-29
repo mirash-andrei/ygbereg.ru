@@ -1,0 +1,13 @@
+extends ../template/layout
+include ../blocks/catalog-elements/mixin
+
+block variables
+    -
+        var title = 'Каталог элементы'
+
+block styles
+    link(rel='stylesheet' href='css/pages/catalog-elements.css')
+
+block content
+    +catalog-elements
+

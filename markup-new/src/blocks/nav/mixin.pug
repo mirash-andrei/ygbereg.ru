@@ -1,0 +1,33 @@
+mixin nav
+    .nav
+        .container
+            nav.navbar.navbar-expand-lg.navbar-dark
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar' aria-controls='navbar' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbar.collapse.navbar-collapse
+                    .navbar-nav.mr-auto
+                        |
+                        |
+                        a.nav-item.nav-link.active(href='#') Формы договоров
+                        |
+                        |
+                        a.nav-item.nav-link(href='#') Отзывы
+                        |
+                        |
+                        a.nav-item.nav-link(href='#') Вакансии
+                        |
+                        |
+                        a.nav-item.nav-link(href='#') Вопросы
+                        |
+                        |
+                        a.nav-item.nav-link(href='#') Оформление заказа
+                        |
+                        |
+                        a.nav-item.nav-link(href='#') Информация по ПБ
+
+                .form.form-inline
+                    a.nav-user(href='' data-toggle='modal' data-target='.auth-modal-sm')
+                        svg(width='15' height='20')
+                            use(xlink:href='#lk')
+                        |
+                        span Личный кабинет

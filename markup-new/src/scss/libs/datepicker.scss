@@ -1,0 +1,75 @@
+@import "../../../node_modules/air-datepicker/dist/css/datepicker";
+
+.datepicker {
+    border-radius: 8px;
+    z-index: 902;
+    
+	&--nav {
+		&-action {
+            border-radius: 8px;
+        }
+
+		&-title {
+            border-radius: 8px;
+        }
+    }
+
+	&--day-name {
+        color: $color;
+    }
+
+	&--cell {
+        border-radius: 8px;
+        
+		&.-current- {
+            color: #39af61;
+        }
+
+		&.-selected- {
+            background: $color;
+            
+			&.-current- {
+                background: $color;
+            }
+
+			&.-focus- {
+                background: $hover;
+                
+				&.datepicker--cell-day.-other-month-, &.datepicker--cell-year.-other-decade- {
+                    background: $hover;
+                }
+            }
+        }
+
+		&.-in-range- {
+            background: rgba($color, .1);
+            
+			&.datepicker--cell-day.-other-month-, &.datepicker--cell-year.-other-decade- {
+                background: rgba($color, .1);
+            }
+
+			&.-focus- {
+                background: rgba($color, .2);
+            }
+        }
+
+		&.-range-from-, &.-range-to- {
+			background: rgba($color, .1);
+            border: 1px solid rgba($color, .5);
+        
+			&.-selected- {
+				background: $color;
+                border: none;
+                
+				&.-focus- {
+                    background: $hover;
+                }
+            }
+        }
+    }
+
+	&--button {
+		color: $color;
+        border-radius: 8px;
+    }
+}

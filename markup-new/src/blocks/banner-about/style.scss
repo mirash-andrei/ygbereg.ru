@@ -1,0 +1,61 @@
+.banner-about {
+  height: 350px;
+  background: url("../images/banners-about.png");
+  background-size: cover;
+  background-position: center;
+  .container {
+    height: 100%;
+    color: white;
+    @media (max-width: 575.98px) {
+      padding: 0;
+    }
+
+    .col-12 {
+      background: rgba(29, 29, 29, 0.7);
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .col-lg-5 {
+      font-size: 30px;
+      line-height: 40px;
+      text-transform: uppercase;
+      padding-left: 53px;
+      padding-top: 30px;
+
+      @media (max-width: 991.98px) {
+        padding-left: 15px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: 22px;
+        line-height: 27px;
+      }
+
+      span {
+        color: $red_color;
+      }
+    }
+    p {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        border-radius: 10px;
+        background: $red_color;
+        top: -9px;
+      }
+      &:first-child {
+        margin-bottom: 100px;
+
+        @media (max-width: 767.98px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

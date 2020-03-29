@@ -1,0 +1,6 @@
+@import "../../../node_modules/swiper/dist/css/swiper";
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: none;
+}

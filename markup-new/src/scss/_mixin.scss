@@ -1,0 +1,57 @@
+@mixin ie() {
+    html.bx-ie & {
+        @content;
+    }
+}
+
+@mixin chrome() {
+    html.bx-chrome & {
+        @content;
+    }
+}
+
+@mixin mac() {
+    html.bx-mac & {
+        @content;
+    }
+}
+
+@mixin windows() {
+    html:not(.bx-mac) & {
+        @content;
+    }
+}
+
+@mixin ios() {
+    html.bx-ios & {
+        @content;
+    }
+}
+
+@mixin android() {
+    html.bx-android & {
+        @content;
+    }
+}
+
+@mixin touch() {
+    html.bx-touch & {
+        @content;
+    }
+}
+
+@mixin no-touch() {
+    html.bx-no-touch & {
+        @content;
+    }
+}
+
+@mixin number-hide-control() {
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

@@ -1,0 +1,29 @@
+mixin pagination
+
+        ul.pagination-list
+            li.pagination-item
+                a.pagination-link(href='#')
+                    svg
+                        use(xlink:href='#arrow-right-white')
+
+            li.pagination-item.is-select
+                a.pagination-link(href='#') 1
+            li.pagination-item
+                a.pagination-link(href='#') 2
+            li.pagination-item
+                a.pagination-link(href='#') 3
+            li.pagination-item
+                a.pagination-link(href='#') 4
+            li.pagination-item
+                a.pagination-link(href='#') 5
+            li.pagination-item
+                a.pagination-link(href='#') 6
+            li.pagination-item
+                a.pagination-link(href='javascript:void(0);') ...
+            li.pagination-item
+                a.pagination-link(href='#') 23
+
+            li.pagination-item.active
+                a.pagination-link(href='#')
+                    svg
+                        use(xlink:href='#arrow-right-white')

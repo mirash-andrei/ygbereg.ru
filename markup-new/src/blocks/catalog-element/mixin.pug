@@ -1,0 +1,18 @@
+mixin catalog-element
+    .catalog-element
+        .catalog-img(style='background: url(css/images/catalog_element.png);background-position: center;background-size: cover;')
+        .catalog-element-name Подставка П 10 под огнетушитель
+        .catalog-element-price
+            p.prices Цена:
+            p.price опт:
+                |
+                span 185 ₽
+            p.price розница:
+                |
+                span 200 ₽
+        .catalog-element-buy
+            a(class="btn-red" href="#") В корзину
+            a(class="link-detail" href="#") Подробнее
+                svg(width='9' height='12')
+                    use(xlink:href='#arrow-right')
+

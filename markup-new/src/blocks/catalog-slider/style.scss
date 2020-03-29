@@ -1,0 +1,48 @@
+@import "../catalog-element/style";
+
+.catalog-slider {
+  background: white;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  .js-tabList {
+    margin-bottom: 48px;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  .js-tabItem {
+    height: 52px;
+    background: $black;
+    color: white;
+    border-radius: 3px;
+    padding: 0 42px;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 10px;
+      margin-right: 0;
+      justify-content: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $red_color;
+    }
+    &.is-select {
+      background: $red_color;
+      &:hover {
+        color: white;
+        background: $red-hover;
+      }
+    }
+  }
+  .js-tabBlock {
+    display: none;
+    &.is-open {
+      display: block;
+    }
+  }
+}

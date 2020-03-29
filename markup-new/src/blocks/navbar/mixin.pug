@@ -1,0 +1,141 @@
+mixin navbar
+    .container
+        .row
+            .col-lg-2.col-sm-3.col-6.order-sm-1.order-1
+                svg(class="logo")
+                    use(xlink:href='#logo')
+            .col-lg-3.col-sm-5.col-6.d-flex.justify-content-center.align-items-center.order-sm-2.order-2
+                h1 Противопожарное оборудование
+            .col-lg-3.col-sm-4.d-flex.justify-content-center.align-items-center.order-sm-3.order-3
+                a(class='mail' href='#')
+                    svg(width='20' height='17')
+                        use(xlink:href='#mail')
+                    |
+                    | yuzhni_bereg@mail.ru
+            .col-lg-2.col-sm-8.d-flex.flex-column.justify-content-center.phone.align-items-sm-start.align-items-center.order-sm-4.order-4
+                a(href='') 8(861)257-07-62
+                |
+                a(href='') 8(861)257-07-62
+            .col-lg-2.col-sm-4.d-flex.align-items-center.order-sm-5.order-5
+                a(class='request-call btn-red d-flex justify-content-center align-items-center' href='')
+                    svg(width='16' height='17')
+                        use(xlink:href='#phone')
+                    |
+                    span Заказать звонок
+            .col-lg-3.col-sm-5.d-flex.flex-column.order-sm-6.order-7
+                a( class="nav-head d-flex align-items-center" href="#")
+                    .nav-burger
+                    |
+                    span Каталог
+                if home
+                    .nav-body.main
+                        ul
+                            li
+                                a(href="") Огнетушители
+                            |
+                            li
+                                a(href="") Шкафы пожарные
+                            |
+                            li
+                                a(href="") Стволы пожарные
+                            |
+                            li
+                                a(href="") Головки пожарные
+                            |
+                            li
+                                a(href="") Рукава пожарные
+                            |
+                            li
+                                a(href="") Гидранты пожарные и подставки
+                            |
+                            li
+                                a(href="") Щиты и ящики пожарные
+                            |
+                            li
+                                a(href="") Пожарный инвентарь
+                            |
+                            li
+                                a(href="") Краны, вентили
+                            |
+                            li
+                                a(href="") Водопенное борудование
+                            |
+                            li
+                                a(href="") Знаки, плакаты, планы эвакуации
+                            |
+                            li
+                                a(href="") Противопожарные двери
+                            |
+                            li
+                                a(href="") Огнезащитные составы
+                            |
+                            li
+                                a(href="") Одежда пожарных (БОП, СИЗ)
+                            |
+                            li
+                                a(href="") Прочее оборудование
+                else
+                    .nav-body
+                        ul
+                            li
+                                a(href="") Огнетушители
+                            |
+                            li
+                                a(href="") Шкафы пожарные
+                            |
+                            li
+                                a(href="") Стволы пожарные
+                            |
+                            li
+                                a(href="") Головки пожарные
+                            |
+                            li
+                                a(href="") Рукава пожарные
+                            |
+                            li
+                                a(href="") Гидранты пожарные и подставки
+                            |
+                            li
+                                a(href="") Щиты и ящики пожарные
+                            |
+                            li
+                                a(href="") Пожарный инвентарь
+                            |
+                            li
+                                a(href="") Краны, вентили
+                            |
+                            li
+                                a(href="") Водопенное борудование
+                            |
+                            li
+                                a(href="") Знаки, плакаты, планы эвакуации
+                            |
+                            li
+                                a(href="") Противопожарные двери
+                            |
+                            li
+                                a(href="") Огнезащитные составы
+                            |
+                            li
+                                a(href="") Одежда пожарных (БОП, СИЗ)
+                            |
+                            li
+                                a(href="") Прочее оборудование
+            |
+            .col-lg-9.col-sm-7.nav-middle.d-flex.justify-content-between.align-items-start.order-sm-7.order-6
+                nav.navbar.navbar-expand-lg.navbar-light
+                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar_horizont' aria-controls='navbar_horizont' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbar_horizont.collapse.navbar-collapse
+                        .navbar-nav
+                            a.nav-item.nav-link.active(href='#') Услуги
+                            a.nav-item.nav-link(href='#') Акции
+                            a.nav-item.nav-link(href='#') О компании
+                            a.nav-item.nav-link(href='#') Прайс
+                            a.nav-item.nav-link(href='#') Доставка
+                            a.nav-item.nav-link(href='#') Контакты
+                form.d-flex.align-items-center.position-relative
+                    input.search(type='search' placeholder='Поиск...' aria-label='Search')
+                    |
+                    svg(class="position-absolute search-icon" width='16' height='17')
+                        use(xlink:href='#search')

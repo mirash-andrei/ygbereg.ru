@@ -1,0 +1,73 @@
+/** Файл под общие стили для всего сайта */
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/transitions";
+
+h1{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: $black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.btn-red {
+  background: $red_color;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  &:hover {
+    background: $red-hover;
+    color: white;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  background: $red_color;
+  background-image: none !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus{
+    outline: none;
+  }
+}
+button:focus{
+  outline: none;
+}
+
+.swiper-button-prev {
+  left: 0px !important;
+  transform: rotate(180deg);
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+
+

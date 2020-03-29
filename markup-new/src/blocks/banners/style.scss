@@ -1,0 +1,98 @@
+.banners {
+  background: url("../images/BG.png");
+  background-size: cover;
+  padding-bottom: 40px;
+  .col-md-12 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+
+    @media (max-width: 991.98px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  .col-md-5 {
+    padding-left: 3px;
+    padding-right: 5px;
+
+    @media (max-width: 991.98px) {
+      padding-left: 15px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-right: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  .col-md-7 {
+    padding-left: 5px;
+
+    @media (max-width: 767.98px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  .banner-name {
+    padding-top: 34px;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .banner {
+    height: 320px;
+    position: relative;
+    &.swiper-slide {
+      padding-top: 62px;
+      h3 {
+        font-size: 26px;
+        color: $red_color;
+        margin-bottom: 7px;
+        margin-left: 41px;
+      }
+      .description {
+        max-width: 313px;
+        font-size: 14px;
+        color: #9F9F9F;
+        margin-bottom: 27px;
+        margin-left: 41px;
+      }
+      .price {
+        font-size: 14px;
+        color: $black;
+        margin-bottom: 27px;
+        margin-left: 41px;
+      }
+      .btn-red {
+        position: relative;
+        bottom: 0;
+        width: 190px;
+        height: 52px;
+        margin-left: 41px;
+      }
+    }
+    .btn-red {
+      position: absolute;
+      bottom: 35px;
+      width: 190px;
+      height: 52px;
+      margin-left: 25px;
+    }
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 2px;
+    padding-right: 15px;
+    text-align: right;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: white;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: $red_color;
+  }
+}

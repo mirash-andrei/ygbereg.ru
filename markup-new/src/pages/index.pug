@@ -1,0 +1,34 @@
+extends ../template/layout
+
+block variables
+    -
+        var title = 'Все страницы'
+
+block content
+    -
+        var pages = [
+        {
+        title: 'Гавная',
+        link: 'home.html'
+        },
+        {
+        title: 'Каталог',
+        link: 'catalog.html'
+        },
+        {
+        title: 'Каталог элементы',
+        link: 'catalog-elements.html'
+        },
+        {
+        title: 'Новости',
+        link: 'news.html'
+        },
+        ];
+
+    .workarea-text(style="height: 680px;margin-top: 50px;")
+        .container
+            .col-md-9.offset-3
+                ul
+                    each page in pages
+                        li
+                            a(href= page.link)= page.title

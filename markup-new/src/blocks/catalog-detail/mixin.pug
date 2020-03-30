@@ -1,0 +1,44 @@
+include ../breadcrumb/mixin
+mixin catalog-detail
+   section.workarea
+        .container
+            +breadcrumb
+            section.catalog-detail
+                .row
+                    .col-12.d-flex.justify-content-between.align-items-center
+                        h1 Шкаф пожарный ШПК 310
+                        a(class="btn-gray align-items-center justify-content-center" href="#") Вернуться к: Шкафы пожарные
+                            svg(width='9' height='12')
+                                use(xlink:href='#arrow-right-black')
+                    .col-lg-5
+                        img(src='images/catalog-detail.png')
+                    .col-lg-6
+                        p.spec Характеристики:
+                        p.spec-detail Для 1 крана и набора, Корзина для одного напорного рукава, вес-12 кг
+                        p.spec.price-name Цена:
+                        .catalog-detail-price
+                            p.price опт:
+                                |
+                                span 185 ₽
+                            p.price розница:
+                                |
+                                span 200 ₽
+
+                        .col-12.row
+                            .spec-block.d-flex.flex-column
+                                p.spec Модель:
+                                select.custom-select
+                                    option(selected='') НОК
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+
+                            .spec-block.d-flex.flex-column
+                                p.spec Количество:
+                                select.custom-select
+                                    option(selected='') НОК
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+
+

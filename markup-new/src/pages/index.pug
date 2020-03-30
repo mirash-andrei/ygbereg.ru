@@ -20,19 +20,25 @@ block content
         link: 'catalog-elements.html'
         },
         {
+        title: 'Каталог детально',
+        link: 'catalog-detail.html'
+        },
+        {
         title: 'Новости',
         link: 'news.html'
         },
         {
         title: 'Новости детально',
         link: 'news-detail.html'
-        },
+        }
+
         ];
 
-    .workarea-text(style="height: 680px;margin-top: 50px;")
-        .container
-            .col-md-9.offset-3
-                ul
-                    each page in pages
-                        li
-                            a(href= page.link)= page.title
+    .workarea
+        .workarea-text(style="height: 680px;margin-top: 50px;")
+            .container
+                .col-md-9.offset-3
+                    ul
+                        each page in pages
+                            li
+                                a(href= page.link)= page.title

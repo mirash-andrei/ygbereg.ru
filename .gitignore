@@ -1,0 +1,15 @@
+# System and IDE
+.idea
+.DS_Store
+Thumbs.db
+.sass-cache
+*.scssc
+log.txt
+*.log
+*.xml
+
+# Project
+.env
+docker-compose.override.yml
+.docker-sync
+markup-new/node_modules/*

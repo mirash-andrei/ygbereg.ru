@@ -21,3 +21,4 @@ import '../blocks/header/script';
 import '../blocks/banners/script';
 import '../blocks/catalog-slider/script';
 import '../blocks/about/script';
+import '../blocks/catalog-detail/script';

@@ -88,7 +88,7 @@
 
 /***/ "../../node_modules/dom7/dist/dom7.modular.js":
 /*!**************************************************************************************************!*\
-  !*** /Users/andrey/PhpstormProjects/Pogarniki/markup-new/node_modules/dom7/dist/dom7.modular.js ***!
+  !*** /Users/sergej/PhpstormProjects/Pogarniki/markup-new/node_modules/dom7/dist/dom7.modular.js ***!
   \**************************************************************************************************/
 /*! exports provided: $, addClass, removeClass, hasClass, toggleClass, attr, removeAttr, prop, data, removeData, dataset, val, transform, transition, on, off, once, trigger, transitionEnd, animationEnd, width, outerWidth, height, outerHeight, offset, hide, show, styles, css, toArray, each, forEach, filter, map, html, text, is, indexOf, index, eq, append, appendTo, prepend, prependTo, insertBefore, insertAfter, next, nextAll, prev, prevAll, siblings, parent, parents, closest, find, children, remove, detach, add, empty, scrollTo, scrollTop, scrollLeft, animate, stop, click, blur, focus, focusin, focusout, keyup, keydown, keypress, submit, change, mousedown, mousemove, mouseup, mouseenter, mouseleave, mouseout, mouseover, touchstart, touchend, touchmove, resize, scroll */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1984,7 +1984,7 @@ function scroll() {
 
 /***/ "../../node_modules/jquery/dist/jquery.js":
 /*!**********************************************************************************************!*\
-  !*** /Users/andrey/PhpstormProjects/Pogarniki/markup-new/node_modules/jquery/dist/jquery.js ***!
+  !*** /Users/sergej/PhpstormProjects/Pogarniki/markup-new/node_modules/jquery/dist/jquery.js ***!
   \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12594,7 +12594,7 @@ return jQuery;
 
 /***/ "../../node_modules/js-cookie/src/js.cookie.js":
 /*!***************************************************************************************************!*\
-  !*** /Users/andrey/PhpstormProjects/Pogarniki/markup-new/node_modules/js-cookie/src/js.cookie.js ***!
+  !*** /Users/sergej/PhpstormProjects/Pogarniki/markup-new/node_modules/js-cookie/src/js.cookie.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12772,7 +12772,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ "../../node_modules/ssr-window/dist/ssr-window.esm.js":
 /*!**********************************************************************************************************!*\
-  !*** /Users/andrey/PhpstormProjects/Pogarniki/markup-new/node_modules/ssr-window/dist/ssr-window.esm.js ***!
+  !*** /Users/sergej/PhpstormProjects/Pogarniki/markup-new/node_modules/ssr-window/dist/ssr-window.esm.js ***!
   \**********************************************************************************************************/
 /*! exports provided: window, document */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12861,7 +12861,7 @@ var win = (typeof window === 'undefined') ? {
 
 /***/ "../../node_modules/swiper/dist/js/swiper.esm.bundle.js":
 /*!************************************************************************************************************!*\
-  !*** /Users/andrey/PhpstormProjects/Pogarniki/markup-new/node_modules/swiper/dist/js/swiper.esm.bundle.js ***!
+  !*** /Users/sergej/PhpstormProjects/Pogarniki/markup-new/node_modules/swiper/dist/js/swiper.esm.bundle.js ***!
   \************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

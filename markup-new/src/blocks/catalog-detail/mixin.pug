@@ -1,18 +1,20 @@
 include ../breadcrumb/mixin
+include ../catalog-element/mixin
+
 mixin catalog-detail
    section.workarea
         .container
             +breadcrumb
             section.catalog-detail
                 .row
-                    .col-12.d-flex.justify-content-between.align-items-center
+                    .col-12.d-flex.justify-content-between.align-items-center.flex-md-row.flex-column.mb-md-0.mb-4
                         h1 Шкаф пожарный ШПК 310
                         a(class="btn-gray align-items-center justify-content-center" href="#") Вернуться к: Шкафы пожарные
                             svg(width='9' height='12')
                                 use(xlink:href='#arrow-right-black')
-                    .col-lg-5
+                    .col-lg-5.col-md-5
                         img(src='images/catalog-detail.png')
-                    .col-lg-6
+                    .col-lg-6.col-md-7
                         p.spec Характеристики:
                         p.spec-detail Для 1 крана и набора, Корзина для одного напорного рукава, вес-12 кг
                         p.spec.price-name Цена:
@@ -24,8 +26,8 @@ mixin catalog-detail
                                 |
                                 span 200 ₽
 
-                        .col-12.row
-                            .spec-block.d-flex.flex-column
+                        .col-12.row.m-0.p-0
+                            .col-lg-4.col-sm-6.p-0.spec-block.d-flex.flex-column
                                 p.spec Модель:
                                 select.custom-select
                                     option(selected='') НОК
@@ -33,12 +35,119 @@ mixin catalog-detail
                                     option(value='2') Two
                                     option(value='3') Three
 
-                            .spec-block.d-flex.flex-column
+                            .col-lg-4.col-sm-6.p-0.spec-block.d-flex.flex-column
                                 p.spec Количество:
-                                select.custom-select
-                                    option(selected='') НОК
-                                    option(value='1') One
-                                    option(value='2') Two
-                                    option(value='3') Three
+                                .amount
+                                    span.down -
+                                    input(type='text' value='1')
+                                    span.up +
 
+                            .col-lg-4.p-0.buy.align-items-end.d-flex.mt-lg-0.mt-3
+                                a(class='btn-red d-flex justify-content-center align-items-center' href='')
+                                    span В корзину
 
+                    .col-12.catalog-description
+                        p.spec Описание
+                        p.spec-detail Шкаф пожарный предназначен для обеспечения сохранности специальных технических средств, используемых при тушении очагов возгорания, и является важным атрибутом пожарной системы объекта в целом. Пожарный шкаф ШПК 310 - это практичное и надежное вспомогательное пожарное оборудование для хранения одного пожарного крана и набора его комплектующих.
+
+                    .col-12.catalog-detail-table
+                        .row.heading
+                            .col-md Название
+                            .col-md Тип
+                            .col-md Цвет
+                            .col-md Крепление
+                            .col-md Габариты
+                            .col-md Масса
+                            .col-md-2 Примечание
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+                        .row.body
+                            .col-md НЗК
+                            .col-md закрытый
+                            .col-md красный
+                            .col-md навесной
+                            .col-md 540х650х230
+                            .col-md 12 кг
+                            .col-md-2 Корзина для одного напорного рукава
+
+                    .col-12
+                        section.catalog-slider
+                            h3 Еще в этой категории:
+                            .swiper-container.swiper-catalog
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                    .swiper-slide
+                                        +catalog-element
+                                .swiper-button-next
+                                    svg(width='7' height='12')
+                                        use(xlink:href='#arrow-right-white')
+                                .swiper-button-prev
+                                    svg(width='7' height='12')
+                                        use(xlink:href='#arrow-right-white')

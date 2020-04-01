@@ -1,0 +1,12 @@
+extends ../template/layout
+include ../blocks/contacts/mixin
+
+block variables
+    -
+        var title = 'Контакты'
+
+block styles
+    link(rel='stylesheet' href='css/pages/contacts.css')
+
+block content
+    +contacts

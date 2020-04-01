@@ -1,0 +1,113 @@
+include ../breadcrumb/mixin
+
+mixin lk()
+    section.workarea
+        .container
+            +breadcrumb
+            section.lk
+                h1 Личный кабинет
+
+                .col-lg-8.registration
+                    p.heading Для входа, пожалуйста, введите непосредственно здесь свои логин и пароль
+
+                    form
+                        .form-row
+                            .form-group.col.input
+                                label(for='inputEmail4') Имя пользователя
+                                input#inputEmail4.form-control(type='email' placeholder="Логин")
+                                a(href="#") Забыли своё имя пользователя?
+                            .form-group.col.input
+                                label(for='inputPassword4') Ваш пароль
+                                input#inputPassword4.form-control(type='password' placeholder="Пароль")
+                                a(href="#") Забыли пароль?
+                            .form-group.col.btn
+                                button.btn-red(type='submit') Войти
+                                    svg(width='9' height='12')
+                                        use(xlink:href='#arrow-right-white')
+                                .form-check
+                                    input#gridCheck.form-check-input(type='checkbox')
+                                    label.form-check-label(for='gridCheck')
+                                        | Запомнить меня
+
+                h2 Зарегистрироваться
+                .col-lg-8.about-user
+                    form
+                        p.heading Информация о покупателе
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Ваш Email
+                                span *
+                            input.form-control(type='email' placeholder="Email")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Логин
+                                span *
+                            input.form-control(type='email' placeholder="Логин")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Ваше имя
+                                span *
+                            input.form-control(type='email' placeholder="имя")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Пароль
+                                span *
+                            input.form-control(type='email' placeholder="Ваш пароль")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Повторите пароль
+                                span *
+                            input.form-control(type='email' placeholder="Ваш пароль")
+                        .row.m-0.align-items-center.mb-3.pb-1.form-check
+                            .form-check
+                                input#gridCheck.form-check-input(type='checkbox')
+                                label.form-check-label(for='gridCheck')
+                                    | Я даю согласие на обработку моих персональных данных
+                                    span *
+
+                        p.heading Кому отправить счет
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Организация
+                                span *
+                            input.form-control(type='email' placeholder="Организация")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Фамилия
+                                span *
+                            input.form-control(type='email' placeholder="Фамилия")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Имя
+                                span *
+                            input.form-control(type='email' placeholder="Имя")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Отчество
+                            input.form-control(type='email' placeholder="Отчество")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Телефон
+                                span *
+                            input.form-control(type='email' placeholder="Телефон")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Страна
+                            select.form-control
+                                option(selected='') Выберите страну
+                                option(value='1') One
+                                option(value='2') Two
+                                option(value='3') Three
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Область/Регион
+                            select.form-control
+                                option(selected='') Выберите город
+                                option(value='1') One
+                                option(value='2') Two
+                                option(value='3') Three
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Город
+                            input.form-control(type='email' placeholder="Телефон")
+                        .row.m-0.align-items-center.mb-3.pb-1
+                            label(for='inputEmail4') Адрес
+                            input.form-control(type='email' placeholder="Телефон")
+                        .form-group.col.btn.p-0
+                            button.btn-red(type='submit') Регистрация
+                                svg(width='9' height='12')
+                                    use(xlink:href='#arrow-right-white')
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+include ../breadcrumb/mixin
+
+mixin contacts()
+    section.workarea
+        .container
+            +breadcrumb
+            section.contacts
+                h1 Контакты
+                .row.mt-4
+                    .col-md-7
+                        p.heading Адрес:
+                        p.description 350072, г.Краснодар, ул. Московская 116/1
+                        p.heading Телефоны:
+                        .row
+                            .col-lg-6.d-flex.flex-column
+                                a(class="phone" href="#") (861) 257-07-62
+                                a(class="phone" href="#")  252-27-28
+                                a(class="phone" href="#")  252-27-24
+                            .col-lg-6
+                                p.heading Елена
+                                    a(class="phone ml-1" href="#") 8(918)270-77-55,
+                                p.heading Лидия
+                                    a(class="phone ml-1" href="#") 8(918)666-42-22
+                        p.heading.mt-4 Часы работы:
+                        p.description Пн-Чт: с 8:30-16:45ч, Пт: с 8:30-15:45ч, перерыв: с 12:00-13:00ч
+                        p.heading Email:
+                        a(class="email" href="#") уuzhni_bereg@mail.ru
+                        p.heading.mt-4 Юридическая информация:
+                        p.description
+                            |ИНН/КПП: 2310097490/231101001
+                            br
+                            |ОКПО: 74259624
+                            br
+                            |ЮЖНЫЙ ФИЛИАЛ ПАО "ПРОМСВЯЗЬБАНК" г. ВОЛГОГРАД
+                            br
+                            |Р/сч 40702810101000019472
+                            br
+                            |К/сч 30101810100000000715
+                            br
+                            |БИК 041806715
+                    .col-md-5.people
+                        .col-12.p-0.d-flex.flex-lg-row.flex-column
+                            img(src='images/contacts1.png')
+                            .people-description
+                                p.heading Генеральный директор:
+                                p.description Бережной Валерий Викторович
+                                a(class="email" href="#") уuzhni_bereg@mail.ru
+                        .col-12.p-0.d-flex.flex-lg-row.flex-column
+                            img(src='images/contacts2.png')
+                            .people-description
+                                p.heading Заместитель директора по коммерции:
+                                p.description Чурина Елена Николаевна
+                                a(class="email" href="#") уuzhni_bereg@mail.ru
+
+
+                    section.map.col-12
+                        #map(style='width: 100%; height: 450px')
+
+        script(src='https://api-maps.yandex.ru/2.1/?apikey=<f5e53c01-898b-49df-b982-77fe60b002a1>&lang=ru_RU' type='text/javascript')
+        script(type='text/javascript').
+            ymaps.ready(init);
+            var myMap,
+                myPlacemark;
+            function init() {
+                myMap = new ymaps.Map("map", {
+                    center: [45.017487, 39.052399],
+                    zoom: 17,
+                    controls: ['zoomControl']
+                });
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Головной офис в г.Краснодар',
+                    balloonContent: '350058, Краснодарский край, Краснодар г, ул. Селезнева, дом № 204, корпус 2'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: '../bitrix/templates/3web/img/logo_map.png',
+                    // Размеры метки.
+                    iconImageSize: [44, 54],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-25, -80]
+                }),
+                    myMap.behaviors.disable('scrollZoom');
+                myMap.geoObjects.add(myPlacemark);
+            }
+

@@ -1,0 +1,12 @@
+extends ../template/layout
+include ../blocks/lk/mixin
+
+block variables
+    -
+        var title = 'Личный кабинет'
+
+block styles
+    link(rel='stylesheet' href='css/pages/lk.css')
+
+block content
+    +lk

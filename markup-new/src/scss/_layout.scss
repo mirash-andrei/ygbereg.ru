@@ -12,7 +12,21 @@ h1{
   color: $black;
 }
 
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: #9f9f9f;
+}
+
+a {
+  color: $red_color;
+}
+
 a:hover {
+  color: $red-hover;
   text-decoration: none;
 }
 

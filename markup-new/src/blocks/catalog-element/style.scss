@@ -12,6 +12,10 @@
       line-height: 20px;
       padding: 13px 0;
       font-weight: 500;
+
+      @media (min-width: 420px) {
+        min-height: 40px;
+      }
     }
     &-price {
       font-size: 14px;

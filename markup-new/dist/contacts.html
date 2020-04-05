@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Все страницы</title>
+    <title>Контакты</title>
     <meta charset="utf-8">
     <meta name="theme-color" content="#601dc0">
     <meta name="description" content="">
@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/contacts.css">
   </head>
   <body>
     <header class="head">
@@ -97,26 +98,86 @@
         </div>
       </div>
     </header>
-    <div class="workarea">
-      <div class="workarea-text" style="height: 680px;margin-top: 50px;">
-        <div class="container">
-          <div class="col-md-9 offset-3">
-            <ul>
-              <li><a href="home.html">Гавная</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="catalog-elements.html">Каталог элементы</a></li>
-              <li><a href="catalog-detail.html">Каталог детально</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="news-detail.html">Новости детально</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="about-page.html">О компании</a></li>
-              <li><a href="lk.html">Личный кабинет</a></li>
-              <li><a href="lk2.html">Личный кабинет 2</a></li>
-            </ul>
-          </div>
+    <section class="workarea">
+      <div class="container">
+        <div class="workarea-breadcrumb" aria-label="breadcrumb">
+          <ol class="workarea-breadcrumb-list">
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Главная</a></li>
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Страница</a></li>
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Внутренняя страница</a></li>
+          </ol>
         </div>
+        <section class="contacts">
+          <h1>Контакты</h1>
+          <div class="row mt-4">
+            <div class="col-md-7">
+              <p class="heading">Адрес:</p>
+              <p class="description">350072, г.Краснодар, ул. Московская 116/1</p>
+              <p class="heading">Телефоны:</p>
+              <div class="row">
+                <div class="col-lg-6 d-flex flex-column"><a class="phone" href="#">(861) 257-07-62</a><a class="phone" href="#"> 252-27-28</a><a class="phone" href="#"> 252-27-24</a></div>
+                <div class="col-lg-6">
+                  <p class="heading">Елена<a class="phone ml-1" href="#">8(918)270-77-55,</a></p>
+                  <p class="heading">Лидия<a class="phone ml-1" href="#">8(918)666-42-22</a></p>
+                </div>
+              </div>
+              <p class="heading mt-4">Часы работы:</p>
+              <p class="description">Пн-Чт: с 8:30-16:45ч, Пт: с 8:30-15:45ч, перерыв: с 12:00-13:00ч</p>
+              <p class="heading">Email:</p><a class="email" href="#">уuzhni_bereg@mail.ru</a>
+              <p class="heading mt-4">Юридическая информация:</p>
+              <p class="description">ИНН/КПП: 2310097490/231101001<br/>ОКПО: 74259624<br/>ЮЖНЫЙ ФИЛИАЛ ПАО "ПРОМСВЯЗЬБАНК" г. ВОЛГОГРАД<br/>Р/сч 40702810101000019472<br/>К/сч 30101810100000000715<br/>БИК 041806715</p>
+            </div>
+            <div class="col-md-5 people">
+              <div class="col-12 p-0 d-flex flex-lg-row flex-column"><img src="images/contacts1.png"/>
+                <div class="people-description">
+                  <p class="heading">Генеральный директор:</p>
+                  <p class="description">Бережной Валерий Викторович</p><a class="email" href="#">уuzhni_bereg@mail.ru</a>
+                </div>
+              </div>
+              <div class="col-12 p-0 d-flex flex-lg-row flex-column"><img src="images/contacts2.png"/>
+                <div class="people-description">
+                  <p class="heading">Заместитель директора по коммерции:</p>
+                  <p class="description">Чурина Елена Николаевна</p><a class="email" href="#">уuzhni_bereg@mail.ru</a>
+                </div>
+              </div>
+            </div>
+            <section class="map col-12">
+              <div id="map" style="width: 100%; height: 450px"></div>
+            </section>
+          </div>
+        </section>
       </div>
-    </div>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=&lt;f5e53c01-898b-49df-b982-77fe60b002a1&gt;&amp;lang=ru_RU" type="text/javascript"></script>
+      <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [45.017487, 39.052399],
+                zoom: 17,
+                controls: ['zoomControl']
+            });
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Головной офис в г.Краснодар',
+                balloonContent: '350058, Краснодарский край, Краснодар г, ул. Селезнева, дом № 204, корпус 2'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: '../bitrix/templates/3web/img/logo_map.png',
+                // Размеры метки.
+                iconImageSize: [44, 54],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-25, -80]
+            }),
+                myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(myPlacemark);
+        }
+      </script>
+    </section>
     <section class="banner-about">
       <div class="container">
         <div class="col-12">

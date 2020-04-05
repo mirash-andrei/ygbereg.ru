@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Все страницы</title>
+    <title>Личный кабинет 2</title>
     <meta charset="utf-8">
     <meta name="theme-color" content="#601dc0">
     <meta name="description" content="">
@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/lk.css">
   </head>
   <body>
     <header class="head">
@@ -97,26 +98,107 @@
         </div>
       </div>
     </header>
-    <div class="workarea">
-      <div class="workarea-text" style="height: 680px;margin-top: 50px;">
-        <div class="container">
-          <div class="col-md-9 offset-3">
-            <ul>
-              <li><a href="home.html">Гавная</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="catalog-elements.html">Каталог элементы</a></li>
-              <li><a href="catalog-detail.html">Каталог детально</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="news-detail.html">Новости детально</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="about-page.html">О компании</a></li>
-              <li><a href="lk.html">Личный кабинет</a></li>
-              <li><a href="lk2.html">Личный кабинет 2</a></li>
-            </ul>
-          </div>
+    <section class="workarea">
+      <div class="container">
+        <div class="workarea-breadcrumb" aria-label="breadcrumb">
+          <ol class="workarea-breadcrumb-list">
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Главная</a></li>
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Страница</a></li>
+            <li class="workarea-breadcrumb-item"><a class="workarea-breadcrumb-link" href="/">Внутренняя страница</a></li>
+          </ol>
         </div>
+        <section class="lk">
+          <h1>Личный кабинет</h1>
+          <div class="row align-items-center m-0">
+            <p class="you-name">Здравствуйте,<span>Иван</span></p>
+            <button class="btn-gray" type="submit">Выйти
+              <svg width="9" height="12">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="col-lg-8 p-0 align-items-center gray-block">Информация</div>
+          <div class="col-lg-8 about-user">
+            <form>
+              <p class="heading">Информация о покупателе</p>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Ваш Email<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Email"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Логин<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Логин"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Ваше имя<span>*</span></label>
+                <input class="form-control" type="email" placeholder="имя"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Пароль<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Ваш пароль"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Повторите пароль<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Ваш пароль"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Организация<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Организация"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Фамилия<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Фамилия"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Имя<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Имя"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Отчество</label>
+                <input class="form-control" type="email" placeholder="Отчество"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Телефон<span>*</span></label>
+                <input class="form-control" type="email" placeholder="Телефон"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Страна</label>
+                <select class="form-control">
+                  <option selected="">Выберите страну</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Область/Регион</label>
+                <select class="form-control">
+                  <option selected="">Выберите город</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Город</label>
+                <input class="form-control" type="email" placeholder="Телефон"/>
+              </div>
+              <div class="row m-0 align-items-center mb-3 pb-1">
+                <label for="inputEmail4">Адрес</label>
+                <input class="form-control" type="email" placeholder="Телефон"/>
+              </div>
+              <div class="form-group col btn p-0">
+                <button class="btn-red" type="submit">Сохранить изменения
+                  <svg width="9" height="12">
+                    <use xlink:href="#arrow-right-white"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
     <section class="banner-about">
       <div class="container">
         <div class="col-12">

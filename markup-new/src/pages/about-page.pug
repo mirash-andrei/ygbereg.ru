@@ -1,0 +1,12 @@
+extends ../template/layout
+include ../blocks/about-page/mixin
+
+block variables
+    -
+        var title = 'О компании'
+
+block styles
+    link(rel='stylesheet' href='css/pages/about-page.css')
+
+block content
+    +about-page

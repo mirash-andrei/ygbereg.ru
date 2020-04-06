@@ -451,3 +451,27 @@ button.btn {
     padding: 0 15px;
   }
 }
+
+.search-page {
+  .input[type="text"] {
+    display: block;
+    background: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 4px rgba(0,0,0,.2);
+    border-radius: 3px;
+    font-size: 16px;
+    color: #9f9f9f;
+    width: 100%;
+    height: 46px;
+    padding-left: 19px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .input[type="submit"] {
+    height: 46px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 28px;
+  }
+}

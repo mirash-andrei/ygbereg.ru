@@ -222,15 +222,15 @@
     margin-bottom: 17px;
   }
   &.basket {
+    .col-lg-2 , .col-lg-3 {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 991.98px) {
+        padding-bottom: 10px;
+      }
+    }
     .element {
       border-bottom: 1px solid #E4E4E4;
-      .col-lg-2 , .col-lg-3 {
-        display: flex;
-        justify-content: center;
-        @media (max-width: 991.98px) {
-          padding-bottom: 10px;
-        }
-      }
     }
     .amount {
       display: flex;

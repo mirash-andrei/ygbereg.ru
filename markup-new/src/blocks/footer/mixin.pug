@@ -106,3 +106,20 @@ mixin footer()
                                 | галочка
                         button.btn-red(type='button') Оставить заявку
 
+    #request-call2.modal.fade(tabindex='-1' role='dialog' aria-labelledby='request-callTitle2' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .form
+                    .modal-header
+                        h3#request-callTitle2.modal-title Заказать Звонок
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        .form-row
+                            .form-group.col.input.p-0
+                                p 1 x НЗК добавлен в Вашу корзину.
+                    .modal-footer
+                        .form-check
+                        button.btn-red(type='button') Продолжить покупки
+                        button.btn-red(type='button')  Показать корзину
+

@@ -11,13 +11,48 @@ $(document).ready(function () {
         $(".nav-burger").toggleClass("active");
         $(".nav-body").fadeToggle(500, "linear");
     });
+    $(function () {
+        $(".register-user").on("submit", function (e) {
+            e.preventDefault();
+            let $url = '/include/ajax/lk/registration.php',
+                $data = $('.register-user').serializeArray(),
+                mess = $('.result');
+
+            mess.html('');
+
+            $.post($url, $data, function (result) {
+                result = JSON.parse(result);
+                if (!result['success']) {
+                    mess.html(result['errors']);
+                    $('html').animate({
+                        scrollTop: mess.offset().top - 55
+                    }, 500);
+                } else if (result['ID']) {
+                    location.reload();
+                }
+            });
+        });
+        $(".add-call-back").on("submit", function (e) {
+            e.preventDefault();
+            let $url = '/include/ajax/callback.php',
+                $data = $('.add-call-back').serializeArray(),
+                mess = $('.result-form');
+
+            mess.html('');
+
+            $.post($url, $data, function (result) {
+                result = JSON.parse(result);
+                if (!result['success']) {
+                    mess.html(result['errors']);
+                    $('html').animate({
+                        scrollTop: mess.offset().top - 55
+                    }, 500);
+                } else {
+                    mess.html('Ваша заявка принята вскоре с вами свяжуться');
+                }
+                console.log(result);
+            });
+        });
+    });
 });
 
-// $(window).resize(function () {
-//     if ($(this).width() < 992) {
-//         $(".nav-body").css("display", "none");
-//     } else {
-//         $(".nav-body").css("display", "block");
-//     }
-//
-// });

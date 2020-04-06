@@ -13,4 +13,9 @@ $(document).ready(function() {
         $input.change();
         return false;
     });
+    $("#sku").on("change", function(){
+        let sku =elementSKU[this.value];
+        $('[data-price="opt"]').html(sku.OPT_PRICE+' ₽');
+        $('[data-price="retail"]').html(sku.PRICE+' ₽');
+    })
 });

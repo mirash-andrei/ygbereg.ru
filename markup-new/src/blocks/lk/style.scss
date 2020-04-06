@@ -164,6 +164,7 @@
     .btn-red {
       margin-left: 153px;
       width: 210px;
+      padding: 0;
 
       @media (max-width: 767.98px) {
         margin-left: 0;
@@ -219,5 +220,64 @@
     padding-left: 24px;
     margin-top: 38px;
     margin-bottom: 17px;
+  }
+  &.basket {
+    .element {
+      border-bottom: 1px solid #E4E4E4;
+      .col-lg-2 , .col-lg-3 {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 991.98px) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #eee;
+      box-sizing: border-box;
+      box-shadow: inset 0 0 4px rgba(0, 0, 0, .2);
+      border-radius: 3px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #707070;
+      width: 125px;
+      height: 46px;
+    }
+
+    .amount span {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      width: 33%;
+      color: $red_color;
+    }
+
+    .amount span:hover {
+      color: $red_hover;
+    }
+
+    .amount input {
+      width: 33%;
+      border: none;
+      text-align: center;
+      color: #707070;
+    }
+    .form-group {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .btn-red {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    .row.m-0.form-group {
+      margin-top: 20px;
+    }
   }
 }

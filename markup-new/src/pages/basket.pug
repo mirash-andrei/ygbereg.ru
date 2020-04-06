@@ -1,0 +1,12 @@
+extends ../template/layout
+include ../blocks/basket/mixin
+
+block variables
+    -
+        var title = 'Корзина'
+
+block styles
+    link(rel='stylesheet' href='css/pages/lk.css')
+
+block content
+    +basket

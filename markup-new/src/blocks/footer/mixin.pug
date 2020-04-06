@@ -82,3 +82,27 @@ mixin footer()
                                     use(xlink:href='#enter')
 
             p.footer-company ООО "Южный берег" - Пожарное, противопожарное и аварийно-спасательное оборудование
+
+    #request-call.modal.fade(tabindex='-1' role='dialog' aria-labelledby='request-callTitle' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .form
+                    .modal-header
+                        h3#request-callTitle.modal-title Заказать Звонок
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        .form-row
+                            .form-group.col.input.p-0
+                                label(for='inputEmail4') Ваше имя
+                                input#inputEmail4.form-control(type='text' placeholder="имя")
+                            .form-group.col.input.p-0.mt-4
+                                label(for='inputPassword4') Ваш номер телефона
+                                input#inputPassword4.form-control(type='text' placeholder="номер телефона")
+                    .modal-footer
+                        .form-check
+                            input#gridCheck2.form-check-input(type='checkbox')
+                            label.form-check-label(for='gridCheck2')
+                                | галочка
+                        button.btn-red(type='button') Оставить заявку
+

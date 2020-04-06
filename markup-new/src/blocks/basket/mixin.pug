@@ -1,0 +1,60 @@
+include ../breadcrumb/mixin
+
+mixin basket()
+    section.workarea
+        .container
+            +breadcrumb
+            section.lk.basket
+                h1 Корзина
+
+                .col-lg-12.about-user
+                    form
+                        .row.m-0.align-items-center.mb-3.pb-1.d-lg-flex.d-none
+                            .col-lg-3 Название
+                            .col-lg-2 Цена:
+                            .col-lg-2 Кол-во
+                            .col-lg-2 Скидка
+                            .col-lg-3 Итого
+                        .row.m-0.align-items-center.mb-3.pb-1.element
+                            .col-lg-3 Головка пожарная рукавная ГР-50
+                            .col-lg-2.col-6 107,00 руб
+                            .col-lg-2.col-6
+                                .amount
+                                    span.down -
+                                    input(type='text' value='1')
+                                    span.up +
+                            .col-lg-2.col-6 10,00 руб
+                            .col-lg-3.col-6 1007,00 руб
+                        .row.m-0.align-items-center.mb-3.pb-1.element
+                            .col-lg-3 Головка пожарная рукавная ГР-50
+                            .col-lg-2.col-6 107,00 руб
+                            .col-lg-2.col-6
+                                .amount
+                                    span.down -
+                                    input(type='text' value='1')
+                                    span.up +
+                            .col-lg-2.col-6 10,00 руб
+                            .col-lg-3.col-6 1007,00 руб
+                        .row.m-0.align-items-center.mb-3.pb-1.element
+                            .col-lg-3 Головка пожарная рукавная ГР-50
+                            .col-lg-2.col-6 107,00 руб
+                            .col-lg-2.col-6
+                                .amount
+                                    span.down -
+                                    input(type='text' value='1')
+                                    span.up +
+                            .col-lg-2.col-6 10,00 руб
+                            .col-lg-3.col-6 1007,00 руб
+
+                        .row.m-0.form-group.col.btn.p-0
+                            .col-lg-3.d-flex.align-items-center.justify-content-end Итого : 1007,00 руб
+                            button.btn-red(type='submit') Подтвердить заказ
+                                svg(width='9' height='12')
+                                    use(xlink:href='#arrow-right-white')
+
+
+
+
+
+
+

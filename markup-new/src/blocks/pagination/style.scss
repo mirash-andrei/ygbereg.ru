@@ -36,7 +36,7 @@
 		&:last-child {
 			width: 40px;
 			height: 40px;
-			background: $black;
+			background: $red_color;
 			margin: 0 0 0 13px;
 			display: flex;
 			align-items: center;
@@ -46,10 +46,6 @@
 				background: $red-hover;
 			}
 
-            &.active{
-              background: $red_color;
-            }
-
 			.pagination {
 				&-link {
 					border: none;
@@ -58,6 +54,11 @@
 						background: none;
 					}
 				}
+			}
+
+			&.hidden{
+				background: $black;
+				pointer-events: none;
 			}
 		}
 

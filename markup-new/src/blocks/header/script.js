@@ -53,6 +53,14 @@ $(document).ready(function () {
                 console.log(result);
             });
         });
+        $('.add-basket').on('click', function (e) {
+            e.preventDefault();
+            let el = window[$(this).data('id')],
+                url='/include/ajax/basket.php';
+            $.post(url, el, function (result) {
+                $('.js-body-element').html('<p>' + el.COUNT + 'x ' + el.NAME + '</p>');
+            });
+        });
     });
 });
 

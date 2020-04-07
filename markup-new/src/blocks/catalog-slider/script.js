@@ -45,15 +45,19 @@ $(document).ready(function () {
             },
         }
     });
+    $('.js-tab-hit').on('click', function () {
+        let slider = setTimeout(function tick() {
+            var swiper3 = new Swiper('.swiper-catalog-2', {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                freeMode: !1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
 
-    var swiper3 = new Swiper('.swiper-catalog-2', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        freeMode: !1,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        }, 100);
+
     });
-
 });

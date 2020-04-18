@@ -452,8 +452,16 @@ button.btn {
   }
 }
 
-.search-page {
-  .input[type="text"] {
+.search-page, .bx-auth {
+
+  td {
+    color: #9f9f9f;
+    input[type=text] ,input[type=password] {
+      margin-bottom: 20px;
+    }
+  }
+
+  input[type=text] ,input[type=password] {
     display: block;
     background: #fff;
     border: 1px solid #eee;
@@ -467,11 +475,31 @@ button.btn {
     padding-left: 19px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
-  .input[type="submit"] {
+  input[type=submit] {
+    display: inline-block;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: $red_color;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     height: 46px;
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 28px;
+    &:hover {
+      background: $red-hover;
+    }
   }
 }

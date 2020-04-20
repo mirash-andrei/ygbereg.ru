@@ -27,6 +27,12 @@ mixin banners
                                     a(class='btn-red d-flex justify-content-center align-items-center' href='')
                                         |
                                         span Перейти в каталог
+                            .swiper-button-next
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')
+                            .swiper-button-prev
+                                svg(width='7' height='12')
+                                    use(xlink:href='#arrow-right-white')
                             .swiper-pagination
                     .col-md-5
                         .banner(style='background: url(css/images/banner2.png);background-position: center;background-size: cover;')

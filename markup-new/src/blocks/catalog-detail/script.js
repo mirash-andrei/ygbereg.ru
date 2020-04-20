@@ -15,8 +15,8 @@ $(document).ready(function () {
         var $input = $(this).parent().find('input');
         var el = window[$(this).data('id')];
         $input.val(parseInt($input.val()) + 1);
+        el.COUNT = $input.val();
         $input.change();
-        el.COUNT = count;
         return false;
     });
     $("#sku").on("change", function () {

@@ -55,6 +55,7 @@ $(document).ready(function () {
         });
         $('.add-basket').on('click', function (e) {
             e.preventDefault();
+            $('.js-body-element').html('');
             let el = window[$(this).data('id')],
                 url='/include/ajax/basket.php';
             $.post(url, el, function (result) {

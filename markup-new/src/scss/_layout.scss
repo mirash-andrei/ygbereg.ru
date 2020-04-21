@@ -6,13 +6,12 @@
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/custom-forms";
 
-h1{
+h1 {
   font-weight: 500;
   font-size: 26px;
   line-height: 30px;
   color: $black;
 }
-
 
 ul {
   list-style: none;
@@ -24,7 +23,7 @@ p {
 
 a {
   color: $red_color;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 
 a:hover {
@@ -55,7 +54,7 @@ input:focus {
     text-decoration: none;
   }
 
-  &:hover , &:not([href]):hover {
+  &:hover, &:not([href]):hover {
     background: $red-hover;
     color: white;
   }
@@ -69,17 +68,17 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-  opacity: 1!important;
+  opacity: 1 !important;
   background: $black;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
 
@@ -95,6 +94,7 @@ button:focus{
 .hidden {
   display: none;
 }
+
 form, .modal-body {
   label {
     font-style: normal;
@@ -111,14 +111,14 @@ form, .modal-body {
     background: #fff;
     border: 1px solid #eee;
     box-sizing: border-box;
-    box-shadow: inset 0 0 4px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .2);
     border-radius: 3px;
     font-size: 16px;
     color: #9f9f9f;
     width: 100%;
     height: 46px;
     padding-left: 19px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   }
   .btn-red {
     height: 46px;
@@ -129,48 +129,47 @@ form, .modal-body {
   }
 }
 
-
 // .modal-open      - body class for killing the scroll
 // .modal           - container to scroll within
 // .modal-dialog    - positioning shell for the actual modal
 // .modal-content   - actual modal w/ bg and corners and stuff
-$zindex-modal:                      1050 !default;
+$zindex-modal: 1050 !default;
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
-$modal-footer-margin-between:       .5rem !default;
+$modal-footer-margin-between: .5rem !default;
 
-$modal-dialog-margin:               .5rem !default;
-$modal-dialog-margin-y-sm-up:       1.75rem !default;
+$modal-dialog-margin: .5rem !default;
+$modal-dialog-margin-y-sm-up: 1.75rem !default;
 
-$modal-title-line-height:           $line-height-base !default;
+$modal-title-line-height: $line-height-base !default;
 
-$modal-content-color:               null !default;
-$modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-color: null !default;
+$modal-content-bg: $white !default;
+$modal-content-border-color: rgba($black, .2) !default;
+$modal-content-border-width: $border-width !default;
+$modal-content-border-radius: $border-radius-lg !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
-$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
-$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
+$modal-content-box-shadow-xs: 0 .25rem .5rem rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
 
-$modal-backdrop-bg:                 $black !default;
-$modal-backdrop-opacity:            .5 !default;
-$modal-header-border-color:         $border-color !default;
-$modal-footer-border-color:         $modal-header-border-color !default;
-$modal-header-border-width:         $modal-content-border-width !default;
-$modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            1rem !default;
-$modal-header-padding-x:            1rem !default;
-$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+$modal-backdrop-bg: $black !default;
+$modal-backdrop-opacity: .5 !default;
+$modal-header-border-color: $border-color !default;
+$modal-footer-border-color: $modal-header-border-color !default;
+$modal-header-border-width: $modal-content-border-width !default;
+$modal-footer-border-width: $modal-header-border-width !default;
+$modal-header-padding-y: 1rem !default;
+$modal-header-padding-x: 1rem !default;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-xl:                          1170px !default;
-$modal-lg:                          800px !default;
-$modal-md:                          500px !default;
-$modal-sm:                          300px !default;
+$modal-xl: 1170px !default;
+$modal-lg: 800px !default;
+$modal-md: 500px !default;
+$modal-sm: 300px !default;
 
-$modal-fade-transform:              translate(0, -50px) !default;
-$modal-show-transform:              none !default;
-$modal-transition:                  transform .3s ease-out !default;
-$modal-scale-transform:             scale(1.02) !default;
+$modal-fade-transform: translate(0, -50px) !default;
+$modal-show-transform: none !default;
+$modal-transition: transform .3s ease-out !default;
+$modal-scale-transform: scale(1.02) !default;
 
 .modal-open {
   // Kill the scroll on the body
@@ -299,8 +298,12 @@ $modal-scale-transform:             scale(1.02) !default;
   background-color: $modal-backdrop-bg;
 
   // Fade for backdrop
-  &.fade { opacity: 0; }
-  &.show { opacity: $modal-backdrop-opacity; }
+  &.fade {
+    opacity: 0;
+  }
+  &.show {
+    opacity: $modal-backdrop-opacity;
+  }
 }
 
 // Modal header
@@ -392,7 +395,9 @@ $modal-scale-transform:             scale(1.02) !default;
     @include box-shadow($modal-content-box-shadow-sm-up);
   }
 
-  .modal-sm { max-width: $modal-sm; }
+  .modal-sm {
+    max-width: $modal-sm;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -403,9 +408,10 @@ $modal-scale-transform:             scale(1.02) !default;
 }
 
 @include media-breakpoint-up(xl) {
-  .modal-xl { max-width: $modal-xl; }
+  .modal-xl {
+    max-width: $modal-xl;
+  }
 }
-
 
 button.close {
   padding: 0;
@@ -443,10 +449,10 @@ button.btn {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.modal-content{
+.modal-content {
   .btn-red {
     height: 46px;
     padding: 0 15px;
@@ -457,24 +463,24 @@ button.btn {
 
   td {
     color: #9f9f9f;
-    input[type=text] ,input[type=password] {
+    input[type=text], input[type=password] {
       margin-bottom: 20px;
     }
   }
 
-  input[type=text] ,input[type=password] {
+  input[type=text], input[type=password] {
     display: block;
     background: #fff;
     border: 1px solid #eee;
     box-sizing: border-box;
-    box-shadow: inset 0 0 4px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .2);
     border-radius: 3px;
     font-size: 16px;
     color: #9f9f9f;
     width: 100%;
     height: 46px;
     padding-left: 19px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   }
   input[type=submit] {
     display: inline-block;
@@ -493,7 +499,7 @@ button.btn {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     height: 46px;
     width: auto;
     padding-left: 20px;
@@ -502,5 +508,18 @@ button.btn {
     &:hover {
       background: $red-hover;
     }
+  }
+}
+
+.bg-fon {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }

@@ -40,6 +40,8 @@
     font-size: 20px;
     color: white;
     text-transform: uppercase;
+    position: relative;
+    z-index: 2;
   }
   .banner {
     height: 320px;
@@ -51,6 +53,8 @@
         color: $red_color;
         margin-bottom: 7px;
         margin-left: 41px;
+        z-index: 2;
+        position: relative;
       }
       .description {
         max-width: 313px;
@@ -58,12 +62,16 @@
         color: #9F9F9F;
         margin-bottom: 27px;
         margin-left: 41px;
+        z-index: 2;
+        position: relative;
       }
       .price {
         font-size: 14px;
         color: $black;
         margin-bottom: 27px;
         margin-left: 41px;
+        z-index: 2;
+        position: relative;
       }
       .btn-red {
         position: relative;
@@ -71,6 +79,8 @@
         width: 190px;
         height: 52px;
         margin-left: 41px;
+        z-index: 2;
+        position: relative;
       }
     }
     .btn-red {
@@ -79,6 +89,7 @@
       width: 190px;
       height: 52px;
       margin-left: 25px;
+      z-index: 2;
     }
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {

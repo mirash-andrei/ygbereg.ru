@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#sku").on("change", function () {
         var el = window[$(this).data('id')];
         let sku = elementSKU[this.value];
-
+        el.NAME = el.NAME + ' ' + sku.NAME;
         el.OPT_PRICE = sku.OPT_PRICE;
         el.PRICE = sku.PRICE;
         $('[data-price="opt"]').html(sku.OPT_PRICE + ' ₽');

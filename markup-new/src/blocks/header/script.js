@@ -28,7 +28,11 @@ $(document).ready(function () {
                         scrollTop: mess.offset().top - 55
                     }, 500);
                 } else if (result['ID']) {
-                    location.reload();
+                    $('#acsess').show();
+                    $('#acsess').addClass('show');
+                    $('body').addClass('modal-open');
+                    window.setTimeout(window.location.reload.bind(window.location), 2000);
+
                 }
             });
         });
@@ -57,7 +61,7 @@ $(document).ready(function () {
             e.preventDefault();
             $('.js-body-element').html('');
             let el = window[$(this).data('id')],
-                url='/include/ajax/basket.php';
+                url = '/include/ajax/basket.php';
             $.post(url, el, function (result) {
                 $('.js-body-element').html('<p>' + el.COUNT + 'x ' + el.NAME + '</p>');
             });
